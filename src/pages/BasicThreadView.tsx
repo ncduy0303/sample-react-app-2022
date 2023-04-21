@@ -1,4 +1,5 @@
 import BasicCommentList from "../components/CommentList";
+import Comment from "../types/Comment";
 import { Button } from "@material-ui/core";
 import { Link } from "react-router-dom";
 import Typewriter from "typewriter-effect";
@@ -21,6 +22,7 @@ const BasicThreadView: React.FC = () => {
       <h3>{"Inspirational Quotes"}</h3>
       <h4>{"Thread started by Aiken"}</h4>
       <BasicCommentList styled={false} />
+      <br />
       <Link to="/">{`<- Back to threads`}</Link>
       <br />
       <br />
